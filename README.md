@@ -23,7 +23,7 @@ This project helps in price monitoring and in automation.
    ```
 4. npm 
    ```html
-      npm install
+     npm install
    ```
 
 
