@@ -11,6 +11,11 @@ This project helps in price monitoring and in automation.
 
 
 ## Install the project
+1. Install selenium and visual studio in following link: https://www.lambdatest.com/blog/setting-up-selenium-in-visual-studio/
+2. Clone the repo in C.
+   ```html
+   git clone https://github.com/anteropaivarinta/ApartmentInvesting.git
+   ```
 
 
       
