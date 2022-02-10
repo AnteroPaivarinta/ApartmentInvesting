@@ -26,6 +26,7 @@ using Newtonsoft.Json;
 using System.Net.NetworkInformation;
 
 
+
 namespace UI
 {
     public partial class Form1 : Form
@@ -50,7 +51,7 @@ namespace UI
             }
             Console.WriteLine("Kaupunki: " + kaupunki);
             IDictionary<string, string> houses = new Dictionary<string, string>();
-            IWebDriver driver = new ChromeDriver(@"C:\Users\Antero Päivärinta\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0");
+            IWebDriver driver = new ChromeDriver(@"C:\Chromed");
             var options = new ChromeOptions();
             options.AddArgument("headless");
             String sss = String.Format("https://www.etuovi.com/myytavat-asunnot/{0}", kaupunki);
@@ -326,7 +327,7 @@ namespace UI
             cmd.StartInfo.UseShellExecute = false;
             cmd.Start();
 
-            cmd.StandardInput.WriteLine(@"cd C:\Code\testireact");
+            cmd.StandardInput.WriteLine(@"cd C:\Code\UI\javascript");
             // cmd.StandardInput.WriteLine("node server.js");
             cmd.StandardInput.Flush();
             cmd.StandardInput.Close();
@@ -370,7 +371,7 @@ namespace UI
             cmd.StartInfo.CreateNoWindow = true;
             cmd.StartInfo.UseShellExecute = false;
             cmd.Start();
-            cmd.StandardInput.WriteLine(@"cd C:\Code\testireact");
+            cmd.StandardInput.WriteLine(@"cd C:\Code\UI\javascript");
             cmd.StandardInput.WriteLine("npm start");
             cmd.StandardInput.Flush();
             cmd.StandardInput.Close();
@@ -381,18 +382,18 @@ namespace UI
         }
         public static string readCommand()
         {
-            string command = File.ReadAllText(@"C:\Code\acommand.txt");
+            string command = File.ReadAllText(@"C:\Code\UI\acommand.txt");
             return command;
         }
         public static string readCity()
         {
-            string city = File.ReadAllText(@"C:\Code\city.txt");
+            string city = File.ReadAllText(@"C:\Code\UI\city.txt");
             return city;
 
         }
         public static void writeCity(string city)
         {
-            StreamWriter sw = new StreamWriter(@"C:\Code\city.txt");
+            StreamWriter sw = new StreamWriter(@"C:\Code\UI\city.txt");
             sw.WriteLine(city);
             sw.Flush();
             sw.Close();
@@ -400,7 +401,7 @@ namespace UI
 
         public void clearFile()
         {
-            File.WriteAllText("C://Code/city.txt", String.Empty);
+            File.WriteAllText(@"C:\Code\UI\city.txt", String.Empty);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -466,7 +467,7 @@ namespace UI
             cmd.StartInfo.CreateNoWindow = true;
             cmd.StartInfo.UseShellExecute = false;
             cmd.Start();
-            cmd.StandardInput.WriteLine(@"cd C:\Code\testireact");
+            cmd.StandardInput.WriteLine(@"cd C:\Code\UI\javascript");
             cmd.StandardInput.WriteLine("npm start");
             cmd.StandardInput.WriteLine("node server.js");
             cmd.StandardInput.Flush();
