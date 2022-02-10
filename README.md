@@ -17,7 +17,7 @@ This project helps in price monitoring and in automation.
    mkdir Code
    cd Code
    ```
-3. Clone the repo in C-directory with Visual Studio https://docs.microsoft.com/en-us/visualstudio/get-started/tutorial-open-project-from-repo?view=vs-2022
+3. Clone the repo in C-directory with Visual Studio https://docs.microsoft.com/en-us/visualstudio/get-started/tutorial-open-project-from-repo?view=vs-2022. Path is C:/Code
    
 4. npm 
    ```html
