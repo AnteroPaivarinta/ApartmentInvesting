@@ -2,12 +2,12 @@
 Project is planned for persons who are interested about Apartment Investing. Program will search data from etuovi.com website's apartments with city's name as parameter.
 It is possible to search data with same parameter which user used before, just clicking green button in user interface.  When data is searched, it will be sent in server. Server will send
 data to client, in table from the cheapest to the most expensive according to the price per square meter. There is possible to save all data in .txt file pressing button under the table. 
-This project helps in price monitoring and in automation.
+This project helps in price monitoring and in automation.  Data is searched using website's web content instead of API-interface, because API-interface is not available from Etuovi.com
 
 ## Technologies
 * React
 * Node.js 
-* C#
+* C#. Libraries: Selenium
 
 
 ## Install the project
