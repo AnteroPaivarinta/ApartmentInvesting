@@ -33,8 +33,6 @@ This project helps in price monitoring and in automation.  Data is searched usin
 
 
 
-## Usage
-I will add content here later..
 
       
 
