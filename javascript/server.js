@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const fs = require('fs')
-let notes = [{name: "joo", price: "30.30", link: "xwkfpowe"}];
+let notes = [];
 
 
 
