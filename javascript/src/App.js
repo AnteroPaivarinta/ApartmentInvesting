@@ -61,7 +61,7 @@ const App = (props) => {
 
     for(let i=0;i<response.data.length;i++){
       apartments.push({"index": i, "name": response.data[i].name, "price": response.data[i].price, "link": response.data[i].link});
-     //const ok=(prevState)=>[...prevState,{"index": i, "name": response.data[i].name, "price": response.data[i].price, "link": response.data[i].link}];
+    
 
       
     }
@@ -79,7 +79,7 @@ const Content=(props)=> {
   console.log("COntent arr", props );
 
   for(let i=1;i<props.length;i++){
-    //console.log("Frm content:  ",props[10].name);
+  
     console.log("Indeks "+i+" of "+props.length);
     ar.push(<tr><td>{i}</td><td>{props[i].name}</td> <td>{props[i].price}</td> <td>  <a href={props[i].link}>{props[i].link}</a></td> </tr>)
     
@@ -90,7 +90,7 @@ const Content=(props)=> {
   return(ar)
 }
 const f=Content(array);
-console.log("LENGTH: ",f.length);
+
   return (
  
   <div>
