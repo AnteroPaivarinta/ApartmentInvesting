@@ -27,7 +27,7 @@ namespace UI
 
 
                 string exampleTrimmed = String.Concat(price.Where(c => !Char.IsWhiteSpace(c)));
-                // Console.WriteLine("EXAMPLE TRIMMED: " + exampleTrimmed);
+               
                 decimal d = decimal.Parse(exampleTrimmed, new NumberFormatInfo() { NumberDecimalSeparator = "," });
                 Console.WriteLine("DECIMAL: " + d);
                 this.price = d;
